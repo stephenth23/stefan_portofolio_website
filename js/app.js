@@ -6,7 +6,26 @@ const navSlide = () => {
 
     // Toggle Nav
     burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
+		
+		if (nav.classList == "clicked") {
+			anime({
+			  targets: 'li',
+			  translateX: ['-%', '100%'],
+			  delay: anime.stagger(100),
+				easing: 'easeOutExpo'		 // delay starts at 500ms then increase by 100ms for each elements.
+			});
+			nav.classList.toggle('clicked')
+		} else {
+			anime({
+			  targets: 'li',
+			  translateX: ['100%', '0%'],
+			  delay: anime.stagger(100),
+				easing: 'easeOutExpo'			  // delay starts at 500ms then increase by 100ms for each elements.
+			});
+			nav.classList.toggle('clicked')
+		}
+		
+        /*nav.classList.toggle('nav-active');
         body.classList.toggle('body-nav-active');
 
         // Animate Links
@@ -19,9 +38,12 @@ const navSlide = () => {
             }
                 
             console.log(index / 7);
-        });
+        });*/
     });
 }
 
 
+
 navSlide();
+animation();
+
