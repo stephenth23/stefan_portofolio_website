@@ -10,7 +10,7 @@ const navSlide = () => {
 		if (nav.classList == "clicked") {
 			anime({
 			  targets: 'li',
-			  translateX: ['-%', '100%'],
+			  translateX: ['0%', '-100%'],
 			  delay: anime.stagger(100),
 				easing: 'easeOutExpo'		 // delay starts at 500ms then increase by 100ms for each elements.
 			});
