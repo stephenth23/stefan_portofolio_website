@@ -13,8 +13,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-		<section class="header">
 			<header>
+				
 				<a href="#" class="header-logo">STEFAN TURCU</a>
 					
 				<div class="burger">
@@ -23,16 +23,17 @@
 					<div class="line3"></div>
 				</div>
 					
+				<nav>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+					
+				
+					
 			</header>
-			
-			<nav>
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</section>
 		
 
 			<article class="index-about">
@@ -47,12 +48,19 @@
 			<article class="index-projects">
 				
 				<div class="row">
-					<img src="./img/spaceBattle.png" alt="space">
-					<h1>Space Ship Battle</h1>
-					<p class="language">Language: Unity, C#</p>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ex mollitia dicta officiis molestias cumque numquam deserunt, placeat explicabo quis, libero obcaecati tempore delectus quas quibusdam nam fuga impedit? Consectetur.</p>
-					<a href="https://stefanturcu.itch.io/space-ship-battle-v01">https://stefanturcu.itch.io/space-ship-battle-v01</a>
-					<a href="#" style="color: #333;">Read more...</a>
+					
+					
+					<div class="row-content">	
+						<h1>Space Ship Battle</h1>
+						<p class="language">Language: Unity, C#</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ex mollitia dicta officiis molestias cumque numquam deserunt, placeat explicabo quis, libero obcaecati tempore delectus quas quibusdam nam fuga impedit? Consectetur.</p>
+						<a href="https://stefanturcu.itch.io/space-ship-battle-v01">https://stefanturcu.itch.io/space-ship-battle-v01</a>
+						<a href="#" style="color: #333;">Read more...</a>
+					</div>
+					
+					<div class="row-img">	
+						<img src="./img/spaceBattle.png" alt="space">
+					</div>
 				</div>
 
 				<hr>
@@ -61,11 +69,14 @@
 					<div class="row-img">	
 						<img src="./img/dodgeTheBlock.png" alt="dodgeTheBlock">
 					</div>
-					<h1>Dodge The Block</h1>
-					<p class="language">Language: Unity, C#</p>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ex mollitia dicta officiis molestias cumque numquam deserunt, placeat explicabo quis, libero obcaecati tempore delectus quas quibusdam nam fuga impedit? Consectetur.</p>
-					<a href="https://stefanturcu.itch.io/dodge-the-blocks">https://stefanturcu.itch.io/dodge-the-blocks</a>
-					<a href="#" style="color: #333;">Read more...</a>
+					<div class="row-content">	
+						<h1>Dodge The Block</h1>
+						<p class="language">Language: Unity, C#</p>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ex mollitia dicta officiis molestias cumque numquam deserunt, placeat explicabo quis, libero obcaecati tempore delectus quas quibusdam nam fuga impedit? Consectetur.</p>
+						<a href="https://stefanturcu.itch.io/dodge-the-blocks">https://stefanturcu.itch.io/dodge-the-blocks</a>
+						<a href="#" style="color: #333;">Read more...</a>
+					</div>
+					
 				</div>
 
 			</article>
@@ -102,7 +113,10 @@
 			<p>Copyright @2019 Stefan Turcu</p>
 		</footer>
 
+		<script src="./anime-master/lib/anime.min.js"></script>
+		<script src="./js/jquery-3.4.1.min.js"></script>
 		<script src="./js/app.js"></script>
+		
 
     </body>
 </html>
