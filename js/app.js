@@ -7,43 +7,35 @@ const navSlide = () => {
     // Toggle Nav
     burger.addEventListener('click', () => {
 		
-		if (nav.classList == "clicked") {
-			anime({
-			  targets: 'li',
-			  translateX: ['0%', '-100%'],
-			  delay: anime.stagger(100),
-				easing: 'easeOutExpo'		 // delay starts at 500ms then increase by 100ms for each elements.
-			});
-			nav.classList.toggle('clicked')
-		} else {
-			anime({
-			  targets: 'li',
-			  translateX: ['100%', '0%'],
-			  delay: anime.stagger(100),
-				easing: 'easeOutExpo'			  // delay starts at 500ms then increase by 100ms for each elements.
-			});
-			nav.classList.toggle('clicked')
-		}
-		
-        /*nav.classList.toggle('nav-active');
-        body.classList.toggle('body-nav-active');
+      if (nav.classList == "clicked") {
+        
+        anime({
+          targets: 'ul ',
+          width: '0%', // -> from '28px' to '100%',
+          easing: 'easeInOutQuad',
+          direction: 'right'
+        });
 
-        // Animate Links
-        links.forEach((link, index) => {
-            if (link.style.animation){
-                link.style.animation = '';
-            } else {
-                
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`;
-            }
-                
-            console.log(index / 7);
-        });*/
+        nav.classList.toggle('clicked');
+        body.classList.toggle('fixedPosition');
+
+      } else {
+        
+        anime({
+          targets: 'ul',
+          width: '70%', // -> from '28px' to '100%',
+          easing: 'easeInOutQuad',
+          direction: 'left'
+        });
+
+        nav.classList.toggle('clicked');
+        body.classList.toggle('fixedPosition');
+      }
+    
     });
 }
 
 
 
 navSlide();
-animation();
 
