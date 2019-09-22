@@ -14,7 +14,7 @@ const navSlide = () => {
           width: '0%', // -> from '28px' to '100%',
           easing: 'easeInOutQuad',
           direction: 'right',
-          duration: 500
+          duration: 250
         });
 
         nav.classList.toggle('clicked');
@@ -27,7 +27,7 @@ const navSlide = () => {
           width: '70%', // -> from '28px' to '100%',
           easing: 'easeInOutQuad',
           direction: 'left',
-          duration: 500
+          duration: 250
         });
 
         nav.classList.toggle('clicked');
