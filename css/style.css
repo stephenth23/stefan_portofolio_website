@@ -240,13 +240,13 @@ nav ul li a:hover{
         padding: 20px 0;
         margin: 0 auto;
         color: #333;
-        font-size: 34px;
+        font-size: 32px;
         font-weight: bold;
         text-align: center;
     }
     
     .index-about p {
-        font-size: 19px;
+        font-size: 16px;
         text-align: center;
         line-height: 25px;
     }
