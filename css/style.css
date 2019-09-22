@@ -306,13 +306,21 @@ nav ul li a:hover{
     line-height: 45px;
 }
 
-.index-projects .header-button {
-    margin-bottom: 80px;
-    padding: 15px 40px;
+.index-projects .button {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #19242c;
+    width: 30%;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
 
-    background-color: #ffffff;
-    border: 2px solid #333;
-    font-family: 'Roboto Slab', serif;
+.index-projects .button a {
+    color: #19242c;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 900;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 
