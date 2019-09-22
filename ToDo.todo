@@ -3,11 +3,12 @@ https://stephenth23.github.io/StefanTurcu
 ToDo:
     ~ Header:
         - mobile screen
-            ☐ change the animation on mobile form
-            ☐ highlite menu items when hover
+            ✔ change the animation on mobile form @done (9/22/2019, 9:49:28 AM)
+            ✔ highlite menu items when hover @done (9/22/2019, 9:49:33 AM)
         
         - windows screen
-            ☐ freeze the body when the menu is opened
+            ✔ freeze the body when the menu is opened @done (9/22/2019, 9:49:39 AM)
+            ☐ add a menu hover animation
     
     ~ Body:
         ☐ !!! modify completly the projects section !!!

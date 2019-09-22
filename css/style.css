@@ -3,14 +3,20 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #333;
+    background-color: #19242c;
+    color: rgb(33, 41, 49);
     position: relative;
     z-index: 0;
-    font-family: 'Roboto Slab', serif;
+    
+    font-family: Merriweather, Georgia, serif;
+    line-height: 45px;
 }
 
-/* ------------------------------- HEADER ------------------------------- */
+
+/*======================================================== HEADER ========================================================*/
+/*======================================================== HEADER ========================================================*/
+/*======================================================== HEADER ========================================================*/
+
 
 header {
     display: flex;
@@ -18,7 +24,7 @@ header {
     align-items: center;
 	position: fixed;
 
-    background-color: #333; 
+    background-color: #3c424d; 
     width: 100%;
     height: 12vh;
 }
@@ -68,15 +74,8 @@ nav ul li a {
     font-size: 18px;
 }
 
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+nav ul li a:hover{
+    color: #ccc;
 }
 
 /* BURGER */
@@ -101,17 +100,17 @@ nav ul li a {
 		display: inline;
 		position: fixed; 
 		top: 12vh;
-		right: 0px;
+		right: -3%;
         width: 0%;
         height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        background: #19242c;
 	}
 	
 	nav ul li{
         display: block;
         text-align: center;
         align-content: center;
-        padding: calc((100vh - 12vh)/10) 0;
+        padding: calc((100vh - 12vh)/16) 0;
     }
     
     nav ul li a{
@@ -142,7 +141,7 @@ nav ul li a {
 	header .burger div {
 		height: 3px;
 		width: 32px;
-		background-color: #f3f3f3;
+		background-color: #ffffff;
 		margin-bottom: 7px;
     }
 }
@@ -151,16 +150,20 @@ nav ul li a {
     overflow: hidden;
 }
 
-/* ------------------------------- MAIN ------------------------------- */
 
-/* ABOUT */
+/*======================================================== ABOUT ========================================================*/
+/*======================================================== ABOUT ========================================================*/
+/*======================================================== ABOUT ========================================================*/
+
 
 .index-about {
-    width: 100%;
+    width: 95%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
     height: 100vh;
-    margin-bottom: 20px;
-    background-color: #f3f3f3;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
 
     /* background-image: url('../img/code.jpg');
     background-repeat: no-repeat;
@@ -188,14 +191,6 @@ nav ul li a {
     border-color: rgba(0,0,0,.125);
 }
 
-@media only screen and (max-width: 800px) {
-    .index-about img {
-        width: 160px;
-        height: 160px;
-        padding: 8px;
-    }
-}
-
 .index-about h1 {
     width: 70%;
     padding: 30px 0 30px 0;
@@ -220,153 +215,162 @@ nav ul li a {
     margin: 30px auto;
     padding: 15px 40px;
 
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     border: 2px solid #333;
     font-family: 'Roboto Slab', serif;
 }
 
-/* PROJECTS */
+@media only screen and (max-width: 800px) {
+    .index-about {
+        width: 100%;
+    }
+
+    .index-about img {
+        width: 160px;
+        height: 160px;
+        padding: 8px;
+    }
+    
+    .index-about h1 {
+        width: 70%;
+        padding: 20px 0;
+        margin: 0 auto;
+        color: #333;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .index-about p {
+        font-size: 19px;
+        text-align: center;
+        line-height: 25px;
+    }
+}
+
+
+/*======================================================== PROJECTS ========================================================*/
+/*======================================================== PROJECTS ========================================================*/
+/*======================================================== PROJECTS ========================================================*/
+
 
 .index-projects {
-    
-    width: 100%;
-    margin: 30px 0;
-    background-color: #f3f3f3;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .index-projects .row {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 60px 0;
-}
-
-.index-projects .row .row-img {
-    display: block;
-    margin: 0 auto;
-}
-
-.index-projects .row img {
-    display: block;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    text-align: center;
     width: 100%;
-    margin: 0 auto ;
-    padding: 5px;
-    border: 2px solid rgba(0,0,0,.125);
+    margin: 0 auto;
+    border-top: 3px solid #eeeeee;
 }
 
-.index-projects .row h1 {
-    color: #333;
-    font-size: 30px;
+.index-projects .border {
+    border: 2px solid #eeeeee;
+}
+
+.index-projects .project {
+    display: flex;
+	justify-content: space-around;
+	align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.index-projects .col-content h1 {
+    margin: 80px auto;
+    font-size: 40px;
     font-weight: bold;
-    padding: 20px 0;
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
+    letter-spacing: 0.075em;
+    font-family: 'Lexend Giga', sans-serif;
+    width: 70%;
 }
 
-.index-projects .row p.language {
-    font-weight: bold;
+.index-projects img {
+    width: 90%;
+    margin-bottom: 60px
 }
 
-.index-projects .row p {
-    text-align: center;
-    margin: 20px;
+.index-projects .col-content p {
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-family: Merriweather, Georgia, serif;
+    text-align: justify;
+    line-height: 45px;
 }
 
-.index-projects .row a {
-    display: block;
-    margin: 20px auto;
-    width: fit-content;
-    text-align: center;
+.index-projects .header-button {
+    margin-bottom: 80px;
+    padding: 15px 40px;
 
-    font-size: 18px;
-    color: #cc0066;
-    text-decoration: underline;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    font-family: 'Roboto Slab', serif;
 }
 
-@media only screen and (min-width: 800px) {
-	.index-projects {
+
+@media only screen and (max-width: 800px) {
+    .index-projects .row {
+        grid-template-columns: auto;
+    }
+    .index-projects {
+        width: 100%;
+    }
+
+    .index-projects .project {
+        height: fit-content;
+    }
+
+    .index-projects .col-content h1 {
+        margin: 40px auto;
+        font-size: 30px;
+        width: 100%;
+        line-height: 34px;
+        margin-top: 80px;
+    }
     
-		width: 100%;
-		margin: 30px 0;
-		background-color: #f3f3f3;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+    .index-projects img {
+        width: 100%;
+        margin-bottom: 40px
+    }
+    
+    .index-projects .col-content p {
+        font-size: 17px;
+        margin-bottom: 40px;
+        line-height: 28px;
+    }
 
-	.index-projects .row {
-		display: flex;
-		justify-content: space-around;
-		
-		padding: 60px 0;
-	}
+    .index-projects .button {
+        border: 2px solid #19242c;
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-	.index-projects .row .row-img {
-		display: block;
-		margin: auto;
-		width: 50%;
-		
-	}
-
-	.index-projects .row img {
-		display: block;
-		margin: auto;
-		width: 100%;
-		padding: 5px;
-		border: 2px solid rgba(0,0,0,.125);
-	}
-	
-	.index-projects .row .row-content {
-		display: block;
-		margin: auto;
-		width: 45%;
-	}
-
-	.index-projects .row h1 {
-		color: #333;
-		font-size: 70px;
-		font-weight: bold;
-		padding: 20px 0;
-		text-transform: uppercase;
-		font-weight: bold;
-		font-family: 'Anton', sans-serif;
-		text-align: center;
-	}
-
-	.index-projects .row p.language {
-		font-weight: bold;
-		align-items: center;
-		display: block;
-		text-align: center;
-		font-size: 25px;
-	}
-
-	.index-projects .row p {
-		text-align: center;
-		padding: 30px 0;
-		font-size: 20px;
-	}
-
-	.index-projects .row a {
-		width: fit-content;
-		text-align: center;
-
-		font-size: 18px;
-		color: #cc0066;
-		text-decoration: underline;
-	}
+    .index-projects .button a {
+        color: #19242c;
+        text-decoration: none;
+        font-size: 16px;
+    }
 }
 
-/* CONTACT FORM */
+
+/*======================================================== CONTACT FORM ========================================================*/
+/*======================================================== CONTACT FORM ========================================================*/
+/*======================================================== CONTACT FORM ========================================================*/
+
 
 .index-contact {
-    
-    width: 100%;
+    width: 95%;
     padding: 10px 0;
-    margin: 30px 0;
-    background-color: #f3f3f3;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto;
+    background-color: #f5f5f5;
 }
 
 .index-contact .form-email {
@@ -421,12 +425,29 @@ nav ul li a {
     padding: 10px 40px;
     margin-bottom: 50px;
 
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     border: 2px solid #333;
     font-family: 'Roboto Slab', serif;
 }
 
-/* FOOTER */
+@media only screen and (max-width: 800px) {
+    .index-contact .cotact-button {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 40px;
+        margin-bottom: 50px;
+    
+        background-color: #f5f5f5;
+        border: 2px solid #333;
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+
+/*======================================================== FOOTER ========================================================*/
+/*======================================================== FOOTER ========================================================*/
+/*======================================================== FOOTER ========================================================*/
+
 
 footer {
     display: grid;
@@ -435,8 +456,8 @@ footer {
     text-align: center;
     width: 100%;
     padding: 50px 0;
-    margin: 30px 0 0 0;
-    background-color: #333;
+    margin: 0;
+    background-color: #3c424d;
 }
 
 footer p {
@@ -445,16 +466,17 @@ footer p {
     display: block;
     align-content: center;
     margin: 50px 0 5px 0;
-    color: #f3f3f3;
+    color: #ffffff;
     font-size: 14px;
 }
 
 footer .fa {
-    color: #f3f3f3;
+    color: #ffffff;
     
 }
 
-
-
-
-
+@media only screen and (max-width: 800px) {
+    .index-contact {
+        width: 100%;
+    }
+}
