@@ -156,132 +156,6 @@ nav ul li a:hover{
 }
 
 
-/*======================================================== ABOUT ========================================================*/
-/*======================================================== ABOUT ========================================================*/
-/*======================================================== ABOUT ========================================================*/
-
-
-.index-about {
-    width: 90%;
-    display: block;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    height: 100vh;
-    background-color: #ffffff;
-
-    /* background-image: url('../img/code.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-}
-
-.index-about .img {
-    display: block;
-    margin: 0 auto;
-    padding: calc((100vh / 2) - 200px) 0 10px 0;
-} 
-
-.index-about img {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0,0,0,.125);
-}
-
-.index-about h1 {
-    width: 70%;
-    padding: 30px 0 30px 0;
-    margin: 0 auto;
-    color: #333;
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.index-about p {
-    width: 70%;
-    margin: 0 auto;
-    text-align: left;
-    color: #333;
-    font-size: 20px;
-    text-align: center;
-}
-
-.index-about .header-button {
-    display: block;
-    margin: 30px auto;
-    padding: 15px 0;
-
-    background-color: #ffffff;
-    border: 2px solid #333;
-    font-family: 'Roboto Slab', serif;
-}
-
-.index-about .header-button a {
-    color: #333333;
-    text-decoration: none;
-    padding: 15px 40px;
-    font-size: 19px;
-    font-weight: 900;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-
-@media only screen and (max-width: 800px) {
-    .index-about {
-        width: 100%;
-    }
-
-    .index-about img {
-        width: 160px;
-        height: 160px;
-        padding: 8px;
-    }
-    
-    .index-about h1 {
-        width: 70%;
-        padding: 20px 0;
-        margin: 0 auto;
-        color: #333;
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-    }
-    
-    .index-about p {
-        font-size: 16px;
-        text-align: center;
-        line-height: 25px;
-    }
-
-    .index-about .header-button {
-        display: block;
-        margin: 30px auto;
-        padding: 15px 0;
-    
-        background-color: #ffffff;
-        border: 2px solid #333;
-        font-family: 'Roboto Slab', serif;
-    }
-
-    .index-about .header-button a {
-        color: #333333;
-        text-decoration: none;
-        padding: 15px 30px;
-        font-size: 18px;
-        font-weight: 900;
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
-    }
-}
-
-
 /*======================================================== PROJECTS ========================================================*/
 /*======================================================== PROJECTS ========================================================*/
 /*======================================================== PROJECTS ========================================================*/
@@ -290,6 +164,7 @@ nav ul li a:hover{
 .index-projects {
     width: 90%;
     margin: 0 auto;
+    padding: 12vh 0;
     background-color: #ffffff;
 }
 
@@ -300,7 +175,6 @@ nav ul li a:hover{
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    border-top: 3px solid #eeeeee;
 }
 
 .index-projects .border {
@@ -324,17 +198,21 @@ nav ul li a:hover{
 
 .index-projects .col-content h1 {
     margin: 80px auto;
-    font-size: 40px;
+    padding: 140px 0 40px 0;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.075em;
     font-family: 'Lexend Giga', sans-serif;
-    width: 70%;
+    width: 100%;
+    text-align: left;
 }
 
 .index-projects img {
-    width: 90%;
-    margin-bottom: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .index-projects .col-content p {
@@ -343,7 +221,7 @@ nav ul li a:hover{
     font-family: Merriweather, Georgia, serif;
     text-align: justify;
     line-height: 45px;
-    padding: 0 10%;
+    padding: 0;
 }
 
 .index-projects .button {
